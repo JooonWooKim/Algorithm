@@ -1,0 +1,25 @@
+import java.util.*;
+  
+public class Main {
+  public static void main(String[] args){
+    Scanner in=new Scanner(System.in);
+    int s = in.nextInt();    //734
+    int x = in.nextInt();    //893
+      
+    String s1 = String.valueOf(s);
+    String x1 = String.valueOf(x);
+      
+    String s1sb = new StringBuilder(s1).reverse().toString(); //437
+    String x1sb = new StringBuilder(x1).reverse().toString(); //398
+      
+    int reverseNum1 = Integer.parseInt(s1sb);
+    int reverseNum2 = Integer.parseInt(x1sb);
+      
+    if(reverseNum1 > reverseNum2){
+        System.out.println(reverseNum1);
+    }
+    else{
+        System.out.println(reverseNum2);
+    }
+  }
+}
